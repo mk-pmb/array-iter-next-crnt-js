@@ -54,21 +54,16 @@ expectEqual(dict, expected);
 <!--/include-->
 
 
+In scenarios where you know that all your values are truthy and you don't
+mind coding style:
+```javascript
+while (x = myIter()) { console.log(x); }
+```
+
+
+
 
 <!--#toc stop="scan" -->
-
-
-Q&A
----
-
-* Why does the iterator function return `false` instead of `undefined`
-  if there's no next value?
-
-In scenarios where you know that all your values are truthy and you don't
-mind coding style, you can
-```javascript
-while (x = myIter().crnt) { console.log('after next(), crnt is', x); }
-```
 
 
 
